@@ -1,13 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    margin: 0;
-    padding: 0;
+   
     background-color: black;
     color: white;
-    width: 100%;
-    height: 100%;
+ 
     
 
 }
+html{
+    scroll-behavior:smooth;
+}
+
 .folio{
 color: purple;
 }
@@ -19,6 +26,7 @@ color: purple;
 }
 .navbar{
    margin: 10px;
+   position: fixed;
     width: 90%;
     height: 60px;
     border-radius:999px;
@@ -32,11 +40,13 @@ color: purple;
     margin-top: 10px;
     gap: 10%;
     justify-content: center;
+    z-index: 1000;
 }
 
 .Home{
     display: flex;
     gap: 20px;
+   
 
   
 }
@@ -62,48 +72,41 @@ color: purple;
 .Home a:hover::after {
   width: 100%;    
 }
-
-
-
-
-
-
 .HeroSection{
     margin: 5%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 #intro{
-   width: 50%;
+    width: 60%;
+    
    letter-spacing: 0.5px;
    line-height: 1.5;
-  
+   position: absolute;  
 }
+
+
 #intro  strong{
     color: orange;
 }
 #type{
-    color: purple;
-    font-weight:bold;
-    position: relative;
 
-      display: inline-block;
-      letter-spacing: 2px;
+    position: relative;
+  font-weight: bold;
+  color: transparent; 
 
 }
 #type::before {
     content: attr(data-text);
     position: absolute;
-    top: 0;
-     left:0;
      color:purple;
   width: 0;
-  height: 100%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid purple;
-  animation:slide 5s steps(18) infinite;
+  animation:slide 8s steps(21) infinite;
 
 }
+/* type animation */
 @keyframes slide {
  0%{
     width:0%;
@@ -120,4 +123,60 @@ color: purple;
 
     
 }
+/* skills */
+.skill{
+    margin-top:50%;
+    margin-left: 5%;
+}
+#html{
+    border-radius: 9px;
+    border: 5%;
+    background: purple;
+    width: 15%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#html:hover{
+    background: orange;
+    color: black;
+    box-shadow: inset;
+}
+
+
+#css{
+    border-radius: 9px;
+    border: 5%;
+    background: purple;
+    width: 15%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#css:hover{
+    background: orange;
+    color: black;
+    box-shadow: inset;
+}
+
+#js{
+    border-radius: 9px;
+    border: 5%;
+    background: purple;
+    width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#js:hover{
+    background: orange;
+    color: black;
+    box-shadow: inset;
+}
+
+
+
+
+
+
 
