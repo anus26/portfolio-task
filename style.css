@@ -60,9 +60,7 @@ color: purple;
 }
 
 .Home a:hover::after {
-  width: 100%; 
- 
-     
+  width: 100%;    
 }
 
 
@@ -70,10 +68,56 @@ color: purple;
 
 
 
-.content{
+.HeroSection{
     margin: 5%;
+    margin-top: 10%;
 }
-span{
+#intro{
+   width: 50%;
+   letter-spacing: 0.5px;
+   line-height: 1.5;
+  
+}
+#intro  strong{
+    color: orange;
+}
+#type{
     color: purple;
-    animation:backwards ;
+    font-weight:bold;
+    position: relative;
+
+      display: inline-block;
+      letter-spacing: 2px;
+
 }
+#type::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+     left:0;
+     color:purple;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid purple;
+  animation:slide 5s steps(18) infinite;
+
+}
+@keyframes slide {
+ 0%{
+    width:0%;
+  }
+  
+  50%{
+    width:100%;
+    
+  }
+  
+  100%{
+    width:0%;
+  }
+
+    
+}
+
