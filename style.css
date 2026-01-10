@@ -14,9 +14,8 @@ body{
 html{
     scroll-behavior:smooth;
 }
-
 .folio{
-color: purple;
+    color: purple;
 }
 .Portfolio{
     margin: 10px;
@@ -25,8 +24,8 @@ color: purple;
     justify-content: center;
 }
 .navbar{
-   margin: 10px;
-   position: fixed;
+    margin: 10px;
+    position: fixed;
     width: 90%;
     height: 60px;
     border-radius:999px;
@@ -41,14 +40,15 @@ color: purple;
     gap: 10%;
     justify-content: center;
     z-index: 1000;
-}
+} 
 
+.navbar.active{
+    background-color: orange;
+     /* box-shadow: 0 4px 15px rgba(0,0,0,0.3); */
+}
 .Home{
     display: flex;
-    gap: 20px;
-   
-
-  
+    gap: 20px; 
 }
 .Home a {
     position: relative;
@@ -75,13 +75,23 @@ color: purple;
 .HeroSection{
     margin: 5%;
     margin-top: 15%;
+   
+}
+.header-blog{
+    display: flex;
+    gap: 10%;
 }
 #intro{
     width: 60%;
     
    letter-spacing: 0.5px;
    line-height: 1.5;
-   position: absolute;  
+
+}
+.pic{
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
 }
 
 
@@ -106,6 +116,16 @@ color: purple;
   animation:slide 8s steps(21) infinite;
 
 }
+#border{
+    width:90%;
+    height: 5px;
+    border-bottom: 5px solid white;
+    border-radius: 6px;
+    display:block;
+  
+    margin-left: 5%;
+}
+
 /* type animation */
 @keyframes slide {
  0%{
@@ -125,25 +145,27 @@ color: purple;
 }
 /* skills */
 .skill{
-    margin-top:50%;
+    margin-top:18%;
     margin-left: 5%;
 }
 .technologies{
     margin: 5px;
+    margin-top: 10px;
       display: grid;
       justify-content: space-between;
-
-    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  
+        gap: 40px;
+    grid-template-columns: repeat(2,1fr);
 }
 .first{
-    display:grid;
+   
     font-size: large;
      border-radius: 9px;
     border: 5%;
     background:white;
-    width: 15%;
+    width: 60%;
     color:purple;
-
+    text-align: center;
     justify-content: center;
    
 }
@@ -160,9 +182,10 @@ color: purple;
     border: 5%;
     font-size: large;
     background:white;
-    width: 15%;
+    width: 60%;
     color:purple;
     display: flex;
+    text-align:center ;
     justify-content: center;
 }
 #css:hover{
@@ -174,13 +197,45 @@ color: purple;
 #js{
     border-radius: 9px;
     border: 5%;
-    background: purple;
-    width: 15%;
-    color: white;
+    background: white;
+    width: 60%;
+    color: purple;
     display: flex;
+    text-align: center;
     justify-content: center;
 }
 #js:hover{
+    background: orange;
+    color: black;
+    box-shadow: inset;
+}
+#react{
+      border-radius: 9px;
+    border: 5%;
+    background: white;
+    width: 60%;
+    color: purple;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+#react:hover{
+ background: orange;
+    color: black;
+    box-shadow: inset;
+}
+#BOOTSTRAP{
+         border-radius: 9px;
+    border: 5%;
+    background: white;
+    width: 60%;
+    color: purple;
+    display: flex;
+    text-align: center;
+    
+    justify-content: center;  
+}
+#BOOTSTRAP:hover{
     background: orange;
     color: black;
     box-shadow: inset;
