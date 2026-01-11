@@ -80,6 +80,7 @@ html{
 .header-blog{
     display: flex;
     gap: 10%;
+    align-items: center;
 }
 #intro{
     width: 60%;
@@ -350,11 +351,24 @@ h3{
     line-height: 1.9;
     font-size: large;
  }
+ 
  .experience2{
       display: flex;
   /* justify-content: center; */
   gap: 10%;
   margin: 5px;
+ }
+ .admin{
+      max-width: 400px;
+  border-radius: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ }
+ #admin{
+      letter-spacing: 2.5px;
+    line-height: 1.9;
+    font-size: large;
  }
  /* contact */
  .contact{
@@ -388,6 +402,23 @@ transform:translateY(-12px) ;
        background-color: black;
     color: white;
  }
+ footer{
+    display: flex;
+    justify-content: space-between;
+  
+    background-color: purple;
+ }
+footer{
+    padding: 30px 0;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+.foot h1{
+    margin-bottom: 10px;
+}
+
  
 
 
