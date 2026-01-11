@@ -2,6 +2,7 @@ const navbar = document.querySelector(".navbar");
 const menu=document.getElementById("menu-btn")
 const navlinks=document.getElementById("nav-links")
 const links = document.querySelectorAll("#nav-links a");
+
 window.addEventListener("scroll", () => {
     navbar.classList.toggle("active", window.scrollY > 50);
 });
