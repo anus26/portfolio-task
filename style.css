@@ -51,7 +51,7 @@ html{
     gap: 20px; 
 }
 .navbar i{
-    display: none; /* desktop pe hide */
+    display: none; 
 }
 
 .Home a {
@@ -153,24 +153,54 @@ html{
 }
 /* media quires */
 @media (max-width:768px) {
+    .navbar{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+    }
     .navbar i{
-       
+      
         display: block;
         font-size: 24px;
         cursor: pointer;
 
     }
     .Home{
+       position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: orange;
         display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+
+    }
+    .Home a{
+        display: block;
+    }
+    .Home.active{
+        display: flex;
+          transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
     
     
 }
-@media (min-width: 768px) {
-  .container {
-    width: 90%;
-  }
+@media (max-width:768px) {
+    .header-blog{
+        display: grid; 
+        grid-template-rows:auto ;
+        justify-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
 }
+
 /* AboutMe */
 .about{
     margin-top:4%;
@@ -182,7 +212,7 @@ html{
     justify-content: space-between;
     gap: 10px;
     margin-top: 2%;
-  
+    
 }
 h3{
     font-size: xx-large;
@@ -195,9 +225,9 @@ h3{
   font-size: large;
 }
 #second{
-     text-align: center;
-     font-size: 250%;
-     color: purple;
+    text-align: center;
+    font-size: 250%;
+    color: purple;
 }
 .learned{
     max-width: 400px;
@@ -220,18 +250,32 @@ h3{
     font-size: large;
     line-height:2.5;
 }
+@media (max-width:768px) {
+.self{
+        display: grid;
+        grid-template-rows: auto;
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+
+    
+}
 /* skills */
 .skill{
     margin-top:4%;
     margin-left: 5%;
     margin-bottom: 5%;
 }
-    #third{
-     text-align: center;
+#third{
+    text-align: center;
     
      font-size: 250%;
      color: purple;
-}
+    }
 .technologies{
     margin: 5px;
     margin-top: 30px;
@@ -344,6 +388,15 @@ h3{
     box-shadow: inset 0 0 10px purple;
       cursor: pointer;
     transform: translateY(-12px);
+}
+@media (max-width:768px) {
+    .technologies{
+        display: grid;
+        grid-template-rows:auto ;
+        justify-content: center;
+        width: 100%;
+    }
+    
 }
 /* Projects */
 .Projects{
